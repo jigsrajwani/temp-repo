@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+    <style>
+        .container
+        {
+            margin: 20% 30%;
+            width: 30%;
+            background-color:cornflowerblue;
+            border: 7px dotted blanchedalmond;
+            border-radius: 90%;
+            padding: 30px;
+            text-align: center;
+            color: aliceblue;
+            cursor:cell;   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current time is: <br><span id="time"></span>
+    </div>
+    <script>
+        setInterval(() => {
+        let a;
+        let time;
+        let date;
+        a = new Date();
+         time = a.getHours() +":"+ a.getMinutes() +":"+ a.getSeconds();
+         date = a.getDate()+"/" + a.getMonth()+"/"+ a.getFullYear();
+       document.getElementById("time").innerHTML = time +"<br> on "+ date;
+    }, 1000); 
+    </script>
+</body>
+</html>
