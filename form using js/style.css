@@ -1,0 +1,36 @@
+*
+{
+    margin: 0px;
+}
+
+body{
+    background-color:black;
+    color: black;
+    text-align: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+div{
+    background-color:whitesmoke;
+    width: 600px;
+    margin-left: 350px;
+    height: 390px;
+}
+.container
+{
+    margin: auto;
+    transform:translateY(20vh) ;
+}
+input{
+    padding: 6px;
+    margin: 6px;
+    width: 40%;
+    border-radius: 9px;
+    background-color: black;
+}
+#button
+{
+    cursor: pointer;
+    width: 20%;
+}
+
